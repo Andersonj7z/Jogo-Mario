@@ -36,7 +36,39 @@
     position: absolute;
     width: 550px;
     animation: clouds-animation 10s infinite linear ;
-} 
+}
+
+.restart-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-over-message {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.restart-button:hover {
+    background-color: darkred;
+}
 
 @keyframes clouds-animation {
     from {
